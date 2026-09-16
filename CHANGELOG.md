@@ -186,3 +186,17 @@ un quatrième repère ne change pas la mise en page.
 Version incrémentée en correctif et non en mineur : le contenu juridique du fichier est
 identique octet pour octet en dehors de ces trois attributs, et `verifie_le` reste au
 13 septembre 2026, aucune source n'ayant été relue.
+
+## `ia-act.v1.json` 1.3.2, 16 septembre 2026
+
+**Aucun changement de droit.** Le référentiel déclare où il est déposé.
+
+Nouveau champ `depots`, qui porte l'adresse du dépôt public
+<https://github.com/ORIQ-IA/referentiel-ia-act>. Motif : un jeu de données qui n'existe
+qu'à une seule adresse ne se cite pas durablement, et rien ne permet à une machine de
+rattacher la copie qu'elle lit à sa source. Le champ alimente `sameAs` dans le balisage
+`Dataset` de la page publique, et il accueillera `doi` dès qu'un identifiant pérenne aura
+été délivré.
+
+`verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue. `CITATION.cff`
+suit la version, comme le validateur l'exige.
