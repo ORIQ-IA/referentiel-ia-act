@@ -1,0 +1,28 @@
+Référentiel IA Act
+Copyright (c) 2026 Oriq
+
+Ce référentiel est mis à disposition sous licence
+Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Vous êtes libre de le partager et de l'adapter, y compris à des fins
+commerciales, à la seule condition de créditer la source.
+
+Texte intégral de la licence :
+https://creativecommons.org/licenses/by/4.0/legalcode.fr
+Résumé lisible :
+https://creativecommons.org/licenses/by/4.0/deed.fr
+
+Attribution demandée :
+
+  Oriq, référentiel IA Act, version X.Y.Z, vérifié le <date>,
+  https://oriq.fr/ia-act/
+
+La version et la date exactes à citer sont portées par le fichier
+ia-act.v1.json, champs « version » et « verifie_le », et par CITATION.cff.
+
+AVERTISSEMENT
+
+Ce référentiel est un travail documentaire. Il informe, il ne constitue pas
+un avis juridique opposable et ne remplace pas l'analyse d'un professionnel
+du droit. Les textes officiels font seule foi : règlement (UE) 2024/1689 et
+règlement (UE) 2026/1744, publiés au Journal officiel de l'Union européenne.

@@ -1,0 +1,356 @@
+{
+  "version": "1.3.1",
+  "verifie_le": "2026-09-13",
+  "verifie_par": "Oriq",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/deed.fr",
+  "citation": "Oriq, référentiel IA Act, version {version}, vérifié le {verifie_le}, https://oriq.fr/ia-act/",
+  "avertissement": "Document d'information. Ne constitue pas un avis juridique opposable.",
+  "textes": [
+    {
+      "id": "ria",
+      "nom": "Règlement (UE) 2024/1689 établissant des règles harmonisées concernant l'intelligence artificielle",
+      "usuel": "AI Act, ou RIA",
+      "entree_en_vigueur": "2024-08-01",
+      "source": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689",
+      "numero": "2024/1689"
+    },
+    {
+      "id": "omnibus",
+      "nom": "Règlement (UE) 2026/1744 du 8 juillet 2026",
+      "usuel": "omnibus numérique, volet IA",
+      "publie_au_jo": "2026-07-24",
+      "entree_en_vigueur": "2026-07-27",
+      "modifie": [
+        "2024/1689",
+        "2018/1139",
+        "2023/1230"
+      ],
+      "effet_principal": "Report des obligations sur les systèmes à haut risque, assouplissement de la littératie IA, nouvelle interdiction sur les contenus intimes générés.",
+      "source": "https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=OJ%3AL_202601744",
+      "numero": "2026/1744"
+    }
+  ],
+  "calendrier_source": "Article 113 du règlement 2024/1689, dans sa version modifiée par le règlement 2026/1744. Chaque échéance ci-dessous renvoie à un point de cet article.",
+  "echeances": [
+    {
+      "date": "2025-02-02",
+      "statut": "applicable",
+      "objet": "Dispositions générales et définitions, interdictions de l'article 5 et obligation de littératie IA de l'article 4. Chapitres I et II. Les deux interdictions ajoutées par l'omnibus font exception : elles ne s'appliquent qu'au 2 décembre 2026.",
+      "articles": [
+        "chapitre I",
+        "chapitre II",
+        "5",
+        "4"
+      ],
+      "fondement": "article 113, point a)"
+    },
+    {
+      "date": "2025-08-02",
+      "statut": "applicable",
+      "objet": "Obligations des fournisseurs de modèles d'IA à usage général, gouvernance européenne et nationale, organismes notifiants et organismes notifiés, régime de sanctions et confidentialité. Les amendes de l'article 101, qui ne visent que les fournisseurs de modèles à usage général, font exception et suivent le calendrier général.",
+      "articles": [
+        "53",
+        "55",
+        "chapitre V",
+        "chapitre VII",
+        "chapitre III section 4",
+        "chapitre XII",
+        "78"
+      ],
+      "fondement": "article 113, point b)"
+    },
+    {
+      "date": "2026-08-02",
+      "statut": "applicable",
+      "objet": "Application générale du règlement. Obligations de transparence de l'article 50, surveillance du marché, et amendes de l'article 101 applicables aux fournisseurs de modèles d'IA à usage général.",
+      "articles": [
+        "50",
+        "chapitre IX",
+        "101"
+      ],
+      "fondement": "article 113, premier alinéa",
+      "frise": true,
+      "titre_court": "Transparence",
+      "frise_texte": "Dire qu’une IA parle, signaler les contenus générés."
+    },
+    {
+      "date": "2026-08-03",
+      "statut": "applicable",
+      "objet": "Début de la supervision nationale sur la littératie IA de l'article 4.",
+      "articles": [
+        "4"
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "statut": "a_venir",
+      "objet": "Fin de la tolérance pour le marquage lisible par machine des contenus générés, pour les systèmes d'IA générative déjà sur le marché avant le 2 août 2026. Entrée en application des deux interdictions ajoutées par l'omnibus à l'article 5, sur les contenus intimes non consentis et les contenus pédocriminels.",
+      "articles": [
+        "50.2",
+        "5"
+      ],
+      "fondement": "article 113, point a), pour les interdictions ajoutées",
+      "frise": true,
+      "titre_court": "Marquage des contenus",
+      "frise_texte": "Fin de la tolérance pour les systèmes déjà en service, et deux interdictions de plus."
+    },
+    {
+      "date": "2027-12-02",
+      "statut": "a_venir",
+      "objet": "Obligations des systèmes à haut risque de l'annexe III. Reportées du 2 août 2026 par l'omnibus.",
+      "articles": [
+        "chapitre III",
+        "annexe III"
+      ],
+      "ancienne_date": "2026-08-02",
+      "fondement": "article 113, point c), i)",
+      "frise": true,
+      "titre_court": "Systèmes à haut risque",
+      "frise_texte": "Reporté de seize mois par l’omnibus de juillet 2026."
+    },
+    {
+      "date": "2028-08-02",
+      "statut": "a_venir",
+      "objet": "Obligations des systèmes à haut risque intégrés à des produits déjà réglementés, annexe I. Reportées du 2 août 2027 par l'omnibus.",
+      "articles": [
+        "6.1",
+        "annexe I"
+      ],
+      "ancienne_date": "2027-08-02",
+      "fondement": "article 113, point c), ii)",
+      "frise": true,
+      "titre_court": "IA dans les produits marqués CE",
+      "frise_texte": "Machines, dispositifs médicaux, véhicules."
+    }
+  ],
+  "interdictions": {
+    "article": "5",
+    "applicable_depuis": "2025-02-02",
+    "exception": "Les deux interdictions ajoutées par l'omnibus, sur les contenus intimes non consentis et les contenus pédocriminels, ne s'appliquent qu'à partir du 2 décembre 2026. L'article 113, point a), les excepte expressément du 2 février 2025.",
+    "effet": "Pratique interdite. Aucune mise en conformité possible, il faut arrêter.",
+    "pratiques": [
+      {
+        "id": "manipulation",
+        "libelle": "Techniques subliminales ou trompeuses qui altèrent le comportement et causent un préjudice."
+      },
+      {
+        "id": "vulnerabilite",
+        "libelle": "Exploitation de la vulnérabilité liée à l'âge, au handicap ou à la situation sociale ou économique."
+      },
+      {
+        "id": "notation_sociale",
+        "libelle": "Notation sociale des personnes conduisant à un traitement défavorable dans un contexte sans rapport."
+      },
+      {
+        "id": "prediction_infraction",
+        "libelle": "Prédiction du risque qu'une personne commette une infraction sur la seule base du profilage ou de traits de personnalité."
+      },
+      {
+        "id": "moissonnage_visages",
+        "libelle": "Constitution de bases de reconnaissance faciale par moissonnage non ciblé d'images."
+      },
+      {
+        "id": "emotions_travail_education",
+        "libelle": "Reconnaissance des émotions sur le lieu de travail et dans les établissements d'enseignement, hors raisons médicales ou de sécurité."
+      },
+      {
+        "id": "categorisation_biometrique",
+        "libelle": "Catégorisation biométrique visant à déduire des données sensibles, dont l'origine, les opinions, la religion ou l'orientation sexuelle."
+      },
+      {
+        "id": "identification_biometrique_temps_reel",
+        "libelle": "Identification biométrique à distance en temps réel dans l'espace public à des fins répressives, sauf exceptions strictement encadrées."
+      },
+      {
+        "id": "contenus_intimes",
+        "libelle": "Génération de contenus intimes non consentis et de contenus pédocriminels.",
+        "ajout": "omnibus 2026/1744",
+        "applicable_a_partir_de": "2026-12-02",
+        "note": "Article 5(1), points ba) et bb), et article 5(1a) et (1b), insérés par l'omnibus. Seule pratique interdite qui ne vaut pas depuis le 2 février 2025 : l'article 113, point a), l'excepte et fixe son application au 2 décembre 2026."
+      }
+    ]
+  },
+  "haut_risque": {
+    "annexe_iii": {
+      "applicable_a_partir_de": "2027-12-02",
+      "article": "6.2",
+      "domaines": [
+        {
+          "id": "biometrie",
+          "libelle": "Biométrie, identification à distance, catégorisation, reconnaissance des émotions."
+        },
+        {
+          "id": "infrastructures",
+          "libelle": "Infrastructures critiques, sécurité du trafic, eau, gaz, électricité, chauffage."
+        },
+        {
+          "id": "education",
+          "libelle": "Éducation et formation professionnelle : accès, admission, évaluation, détection de fraude."
+        },
+        {
+          "id": "emploi",
+          "libelle": "Emploi et gestion de la main d'oeuvre : recrutement, tri de candidatures, promotion, rupture, répartition des tâches, évaluation du comportement."
+        },
+        {
+          "id": "services_essentiels",
+          "libelle": "Accès aux services essentiels : aide sociale, évaluation de solvabilité, tarification en assurance vie et santé, tri des appels d'urgence."
+        },
+        {
+          "id": "repression",
+          "libelle": "Répression et application de la loi."
+        },
+        {
+          "id": "migration",
+          "libelle": "Migration, asile et contrôle aux frontières."
+        },
+        {
+          "id": "justice_democratie",
+          "libelle": "Administration de la justice et processus démocratiques."
+        }
+      ],
+      "derogation": {
+        "article": "6.3",
+        "libelle": "Un système listé à l'annexe III peut échapper au haut risque si le fournisseur démontre qu'il ne présente pas de risque significatif. Cette auto-évaluation doit être documentée et enregistrée dans la base de données de l'UE. L'omnibus a maintenu cette obligation d'enregistrement."
+      },
+      "obligations_fournisseur": [
+        "Système de gestion des risques sur tout le cycle de vie.",
+        "Gouvernance des données d'entraînement, de validation et de test.",
+        "Documentation technique et journalisation automatique.",
+        "Transparence et information du déployeur, notice d'utilisation.",
+        "Contrôle humain effectif prévu dès la conception.",
+        "Exactitude, robustesse et cybersécurité.",
+        "Système de gestion de la qualité, évaluation de conformité, marquage CE, enregistrement."
+      ],
+      "obligations_deployeur": [
+        "Utiliser le système conformément à la notice.",
+        "Confier le contrôle humain à des personnes compétentes et dotées de l'autorité nécessaire.",
+        "Surveiller le fonctionnement et signaler les incidents graves au fournisseur.",
+        "Conserver les journaux.",
+        "Informer les personnes concernées quand une décision les touche.",
+        "Pour l'emploi, informer les représentants du personnel et les travailleurs concernés avant la mise en service."
+      ]
+    },
+    "annexe_i": {
+      "applicable_a_partir_de": "2028-08-02",
+      "article": "6.1",
+      "libelle": "IA qui constitue un composant de sécurité d'un produit déjà couvert par une législation d'harmonisation de l'Union, ou qui est elle-même un tel produit soumis à évaluation par un tiers.",
+      "exemples": [
+        "machines",
+        "dispositifs médicaux",
+        "jouets",
+        "ascenseurs",
+        "équipements sous pression",
+        "véhicules",
+        "aviation civile"
+      ]
+    }
+  },
+  "transparence": {
+    "article": "50",
+    "applicable_depuis": "2026-08-02",
+    "portee": "S'applique quel que soit le niveau de risque. C'est l'obligation qui touche le plus grand nombre d'entreprises aujourd'hui.",
+    "regles": [
+      {
+        "id": "interaction",
+        "alinea": "50.1",
+        "acteur": "fournisseur",
+        "libelle": "Un système qui interagit directement avec des personnes doit les informer qu'elles parlent à une IA, sauf si c'est évident pour une personne normalement avisée."
+      },
+      {
+        "id": "marquage_machine",
+        "alinea": "50.2",
+        "acteur": "fournisseur",
+        "libelle": "Les contenus de synthèse produits par un système d'IA générative doivent être marqués dans un format lisible par machine et détectable comme généré ou manipulé.",
+        "tolerance": "Jusqu'au 2 décembre 2026 pour les systèmes déjà sur le marché avant le 2 août 2026."
+      },
+      {
+        "id": "emotions_biometrie",
+        "alinea": "50.3",
+        "acteur": "déployeur",
+        "libelle": "Informer les personnes exposées à un système de reconnaissance des émotions ou de catégorisation biométrique."
+      },
+      {
+        "id": "deepfake",
+        "alinea": "50.4",
+        "acteur": "déployeur",
+        "libelle": "Révéler qu'un contenu image, son ou vidéo a été généré ou manipulé. Pour un texte publié sur un sujet d'intérêt public, révéler également, sauf relecture éditoriale humaine avec responsabilité éditoriale assumée, ou oeuvre manifestement artistique ou satirique."
+      }
+    ]
+  },
+  "obligations_transverses": [
+    {
+      "id": "litteratie",
+      "article": "4",
+      "applicable_depuis": "2025-02-02",
+      "supervision_nationale_depuis": "2026-08-03",
+      "supervision_nationale_source": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+      "supervision_nationale_note": "La Commission écrit « the supervision and enforcement rules apply from 3 August 2026 onwards ». La même page écrit ailleurs « as of 2 August 2026 » : l'écart d'un jour est dans la source, pas dans ce référentiel. Le 3 août est retenu comme la date la plus prudente pour le déployeur, qui n'a aucun intérêt à se croire hors surveillance un jour de plus. L'obligation elle-même, article 4, est applicable depuis le 2 février 2025 : c'est sa supervision par les autorités nationales qui commence ici, pas l'obligation.",
+      "acteur": "fournisseur et déployeur",
+      "libelle": "Prendre des mesures pour soutenir le développement d'un niveau suffisant de littératie IA chez les personnes qui utilisent les systèmes pour leur compte.",
+      "note_omnibus": "L'omnibus a transformé une obligation de résultat en obligation de moyens. Aucun niveau individuel n'a à être garanti. L'obligation reste contraignante pour tout déployeur."
+    },
+    {
+      "id": "changement_de_role",
+      "article": "25",
+      "acteur": "déployeur qui bascule fournisseur",
+      "libelle": "Un déployeur devient fournisseur, avec toutes les obligations qui vont avec, s'il appose son nom ou sa marque sur un système à haut risque, s'il le modifie substantiellement, ou s'il en change la destination.",
+      "piege": "C'est le cas le plus fréquent chez une entreprise qui habille un outil du marché à ses couleurs et croit rester simple utilisateur."
+    }
+  ],
+  "usage_general": {
+    "article": "53",
+    "applicable_depuis": "2025-08-02",
+    "acteur": "fournisseur de modèle d'IA à usage général",
+    "libelle": "Documentation technique, information des fournisseurs en aval, politique de respect du droit d'auteur, résumé public des contenus d'entraînement. Obligations renforcées en cas de risque systémique.",
+    "transitoire": "Les modèles mis sur le marché avant le 2 août 2025 doivent se conformer pour le 2 août 2027.",
+    "transitoire_article": "111.3",
+    "note": "Concerne les éditeurs de modèles. Une entreprise qui consomme un modèle par abonnement n'est pas visée par cet article."
+  },
+  "sanctions": {
+    "article": "99",
+    "applicable_depuis": "2025-08-02",
+    "fondement": "Article 113, point b) : le chapitre XII, qui porte le régime de sanctions, s'applique depuis le 2 août 2025, à l'exception de l'article 101.",
+    "exception_article_101": {
+      "article": "101",
+      "applicable_depuis": "2026-08-02",
+      "libelle": "Les amendes que la Commission peut infliger aux fournisseurs de modèles d'IA à usage général suivent le calendrier général du règlement et ne s'appliquent que depuis le 2 août 2026. Elles ne concernent pas les entreprises qui se contentent d'utiliser ces modèles."
+    },
+    "paliers": [
+      {
+        "objet": "Pratiques interdites de l'article 5",
+        "plafond_eur": 35000000,
+        "plafond_pct_ca_mondial": 7
+      },
+      {
+        "objet": "Manquement aux autres obligations, dont celles des fournisseurs et déployeurs et l'article 25(2) et (4)",
+        "plafond_eur": 15000000,
+        "plafond_pct_ca_mondial": 3
+      },
+      {
+        "objet": "Information incorrecte, incomplète ou trompeuse fournie aux autorités",
+        "plafond_eur": 7500000,
+        "plafond_pct_ca_mondial": 1
+      }
+    ],
+    "regle": "Le plafond applicable est le montant le plus élevé des deux, sauf pour les PME et les petites entreprises de taille intermédiaire.",
+    "note_omnibus": "L'omnibus a ouvert la porte aux mesures non financières comme l'avertissement, a demandé de tenir compte de la viabilité économique des PME et des petites entreprises de taille intermédiaire, et a plafonné leur amende au plus faible des deux montants. Les fourchettes elles-mêmes sont inchangées.",
+    "note_calendrier": "Le régime de sanctions est en place depuis le 2 août 2025, mais une sanction suppose un manquement à une obligation elle-même applicable. Les obligations des systèmes à haut risque n'étant pas encore en vigueur, elles ne peuvent pas être sanctionnées aujourd'hui."
+  },
+  "a_verifier": [
+    {
+      "sujet": "Autorité de surveillance du marché désignée en France et guichet national",
+      "raison": "Non vérifié à la source à la date de ce référentiel. Le conseiller ne doit pas l'affirmer.",
+      "action": "Ouvrir la page de l'AI Act Service Desk et la source nationale avant de répondre."
+    }
+  ],
+  "sources_primaires": [
+    "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689",
+    "https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=OJ%3AL_202601744",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+    "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+    "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations",
+    "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+  ]
+}
