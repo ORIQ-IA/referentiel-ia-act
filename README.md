@@ -67,7 +67,8 @@ rendent le même résultat.
 ## Ce que ce référentiel n'est pas
 
 Il informe, il ne constitue pas un avis juridique opposable. Les textes
-officiels font seule foi. Voir [`LICENSE`](LICENSE).
+officiels font seule foi. Voir [`LICENSE`](LICENSE), et [`LICENCE-FR.txt`](LICENCE-FR.txt)
+pour le resume en francais.
 
 ## À propos du journal
 
