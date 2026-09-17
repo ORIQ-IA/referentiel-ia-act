@@ -6,9 +6,10 @@ artificielle, dans un fichier JSON daté, versionné et lisible par machine.
 Sous licence **CC BY 4.0**. Utilisable librement, y compris commercialement, en
 créditant la source.
 
-- Fichier : [`ia-act.v1.json`](ia-act.v1.json)
-- Servi en ligne : <https://oriq.fr/ia-act/ia-act.v1.json>
+- Fichiers : [`ia-act.v1.json`](ia-act.v1.json) et [`obligations.v1.json`](obligations.v1.json)
+- Servis en ligne : <https://oriq.fr/ia-act/ia-act.v1.json> et <https://oriq.fr/ia-act/obligations.v1.json>
 - Page de présentation : <https://oriq.fr/ia-act/>
+- Identifiant pérenne : [`10.5281/zenodo.22810935`](https://doi.org/10.5281/zenodo.22810935)
 - Journal des modifications : [`CHANGELOG.md`](CHANGELOG.md)
 
 ## Pourquoi il existe
@@ -80,10 +81,15 @@ ne figurent pas ici.
 Le dépôt porte un [`CITATION.cff`](CITATION.cff) au format standard. GitHub
 l'affiche, Zenodo le lit, les gestionnaires bibliographiques le comprennent.
 
+Le référentiel est déposé sur Zenodo et porte un **DOI de concept**,
+`10.5281/zenodo.22810935`. Celui-là ne change jamais et pointe toujours vers la
+dernière version déposée ; chaque version en reçoit un second, qui lui est
+propre. Citez le DOI de concept, sauf si vous voulez figer une version précise.
+
 En texte :
 
-> Oriq, référentiel IA Act, version 1.3.1, vérifié le 13 septembre 2026,
-> <https://oriq.fr/ia-act/>
+> Oriq, référentiel IA Act, version 1.3.4, vérifié le 13 septembre 2026,
+> <https://oriq.fr/ia-act/>, DOI 10.5281/zenodo.22810935
 
 ## Comment l'utiliser dans un programme
 

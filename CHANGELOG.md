@@ -218,6 +218,30 @@ revérifier, pas à supposer bloqué.
 `verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue. `CITATION.cff` suit la
 version, comme le validateur l'exige.
 
+## `ia-act.v1.json` 1.3.4, 17 septembre 2026
+
+**Aucun changement de droit.** Le référentiel porte son identifiant pérenne.
+
+Le dépôt Zenodo a délivré le DOI de concept `10.5281/zenodo.22810935` le 17 septembre 2026, à
+la release `v1.4.0` du dépôt public. C'est celui de concept, pas celui de version : il pointe
+toujours vers le dernier dépôt, il ne changera plus. Le DOI de version, `10.5281/zenodo.22810936`,
+n'est pas porté par le référentiel, il change à chaque release.
+
+Trois champs suivent, et un seul endroit les alimente : `doi` le porte, `citation` le recopie
+dans la formule prête à citer, `depots` reçoit `https://doi.org/10.5281/zenodo.22810935`. Le
+générateur du site attendait déjà `doi` pour l'émettre en `identifier` du `Dataset`, et
+`depots` alimente `sameAs` : rien n'a été codé côté site pour ce champ.
+
+`CITATION.cff` reçoit le même DOI en `doi` et en `identifiers`, ce qui fait apparaître la
+citation correcte sur GitHub et pré-remplit Zenodo à la release suivante.
+
+Relevé en relisant, non corrigé par cette version : la fiche Zenodo affiche le type de ressource
+**Software**, alors que `CITATION.cff` déclare `type: dataset`. L'intégration GitHub de Zenodo
+impose Software par défaut. La correction se fait sur la fiche, à la main, avec le compte de
+Brice.
+
+`verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue.
+
 ## `obligations.v1.json` 1.1.0, 17 septembre 2026
 
 **Le chapitre III est atomisé.** Dix-sept articles du régime des systèmes à haut risque

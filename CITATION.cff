@@ -21,11 +21,19 @@ abstract: >-
   risque de l'annexe III, les regles de transparence de l'article 50 et
   l'obligation de litteratie de l'article 4. Chaque fait porte l'article qui le
   fonde et la date a laquelle il a ete verifie a la source. Publie au format JSON
-  lisible par machine.
+  lisible par machine. Le paquet porte un second fichier, obligations.v1.json, qui
+  catalogue les obligations article par article avec l'acteur vise, la date
+  d'exigibilite, la condition d'application, les exceptions et le palier de
+  sanction, chapitre III compris.
 type: dataset
-version: "1.3.3"
+version: "1.3.4"
 date-released: "2026-09-13"
 license: CC-BY-4.0
+doi: "10.5281/zenodo.22810935"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22810935"
+    description: "DOI de concept, pointe toujours vers la derniere version"
 url: "https://oriq.fr/ia-act/"
 repository-artifact: "https://oriq.fr/ia-act/ia-act.v1.json"
 authors:
