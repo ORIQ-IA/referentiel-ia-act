@@ -23,7 +23,7 @@ abstract: >-
   fonde et la date a laquelle il a ete verifie a la source. Publie au format JSON
   lisible par machine.
 type: dataset
-version: "1.3.2"
+version: "1.3.3"
 date-released: "2026-09-13"
 license: CC-BY-4.0
 url: "https://oriq.fr/ia-act/"

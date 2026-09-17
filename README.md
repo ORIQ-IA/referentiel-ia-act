@@ -68,7 +68,7 @@ rendent le même résultat.
 
 Il informe, il ne constitue pas un avis juridique opposable. Les textes
 officiels font seule foi. Voir [`LICENSE`](LICENSE), et [`LICENCE-FR.txt`](LICENCE-FR.txt)
-pour le resume en francais.
+pour le résumé en français.
 
 ## À propos du journal
 

@@ -200,3 +200,20 @@ rattacher la copie qu'elle lit à sa source. Le champ alimente `sameAs` dans le 
 
 `verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue. `CITATION.cff`
 suit la version, comme le validateur l'exige.
+
+## `ia-act.v1.json` 1.3.3, 17 septembre 2026
+
+**Aucun changement de droit.** Le référentiel déclare son second dépôt.
+
+`depots` accueille l'adresse de la fiche data.gouv.fr, à côté de celle de GitHub. Motif mesuré
+le 17/09 : le `Dataset` JSON-LD servi sur `/ia-act/` portait un `sameAs` vers le seul dépôt
+GitHub. Notre jeu de données n'était donc relié à aucun domaine d'État, alors que la fiche
+existe et qu'elle est vivante. Un moissonneur, et un modèle qui lit la page, n'avaient aucun
+moyen de rattacher l'un à l'autre.
+
+Constat associé, non résolu par cette version : `data.europa.eu` ne connaît pas encore ce jeu de
+données (zéro résultat le 17/09), alors qu'il moissonne data.gouv.fr. Délai probable, à
+revérifier, pas à supposer bloqué.
+
+`verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue. `CITATION.cff` suit la
+version, comme le validateur l'exige.
