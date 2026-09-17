@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "verifie_le": "2026-09-13",
   "verifie_par": "Oriq",
   "licence": "CC BY 4.0",
@@ -7,8 +7,8 @@
   "citation": "Oriq, référentiel IA Act, obligations, version {version}, vérifié le {verifie_le}, https://oriq.fr/ia-act/",
   "avertissement": "Document d'information. Ne constitue pas un avis juridique opposable.",
   "portee": "Catalogue des obligations du règlement (UE) 2024/1689, une obligation par entrée, avec son article, ses acteurs et sa date d'exigibilité. Ce fichier ne porte QUE le droit. La méthode qui permet de vérifier chacune de ces obligations chez une entreprise n'est pas publiée : le bien commun, c'est le texte et ses dates, pas la façon de les contrôler.",
-  "perimetre_de_cette_version": "Les huit obligations exigibles au 17 septembre 2026, plus les modèles à usage général, PLUS le chapitre III atomisé : dix-sept articles du régime des systèmes à haut risque, exigible le 2 décembre 2027 pour l'annexe III et le 2 août 2028 pour l'annexe I. Collecte du 17/09/2026 sur la source officielle de la Commission, article par article.",
-  "relation_avec_ia_act_v1": "ia-act.v1.json reste la source du calendrier, des sanctions et des définitions. Ce fichier ne redit aucune date de son propre chef : chaque exigible_le correspond à une échéance de ia-act.v1.json, et un validateur le contrôle avant publication.",
+  "perimetre_de_cette_version": "Les huit obligations exigibles au 17 septembre 2026, plus les modèles à usage général, PLUS le chapitre III atomisé : dix-sept articles du régime des systèmes à haut risque, exigible le 2 décembre 2027 pour l'annexe III et le 2 août 2028 pour l'annexe I. Collecte du 17/09/2026 sur la source officielle de la Commission, article par article. Les neuf rubriques de l'annexe IV, collectées le 17/09/2026, figurent dans le bloc annexe_iv.",
+  "relation_avec_ia_act_v1": "ia-act.v1.json reste la source du calendrier, des sanctions et des définitions. Ce fichier ne redit aucune date de son propre chef : chaque exigible_le correspond à une échéance de ia-act.v1.json, et le validateur du dépôt de conception le contrôle avant publication, avec le statut, les acteurs, les paliers et les sources.",
   "acteurs": [
     {
       "id": "fournisseur",
@@ -282,7 +282,7 @@
       "exigible_le": "2027-12-02",
       "statut": "a_venir",
       "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
-      "libelle": "La documentation est établie AVANT la mise sur le marché ou la mise en service, tenue à jour, et doit démontrer la conformité de façon claire et complète pour une autorité ou un organisme notifié. Elle contient au minimum les éléments de l'annexe IV.",
+      "libelle": "La documentation est établie AVANT la mise sur le marché ou la mise en service, tenue à jour, et doit démontrer la conformité de façon claire et complète pour une autorité ou un organisme notifié. Elle contient au minimum les éléments de l'annexe IV, dont les neuf rubriques figurent dans le bloc annexe_iv de ce fichier.",
       "palier_sanction": "autres_obligations",
       "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-11",
       "exceptions": [
@@ -290,6 +290,15 @@
         "Un produit couvert par l'annexe I section A ne donne lieu qu'à un seul jeu de documentation technique."
       ],
       "renvois": [
+        "9",
+        "13",
+        "14",
+        "15",
+        "20",
+        "40",
+        "42",
+        "47",
+        "72",
         "97"
       ]
     },
@@ -619,12 +628,146 @@
       ]
     }
   ],
+  "annexe_iv": {
+    "intitule": "Documentation technique visée à l'article 11, paragraphe 1",
+    "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/annex-4",
+    "collecte_le": "2026-09-17",
+    "exigible_le": "2027-12-02",
+    "a_qui": "Fournisseur d'un système d'IA à haut risque. C'est le contenu minimal de la documentation exigée par l'article 11 : neuf rubriques, dont les deux premières se subdivisent.",
+    "forme_simplifiee": "Les PME et les jeunes pousses peuvent fournir ces éléments sous une forme simplifiée, au moyen d'un formulaire établi par la Commission que les organismes notifiés sont tenus d'accepter. Article 11, paragraphe 1.",
+    "rubriques": [
+      {
+        "numero": "1",
+        "intitule": "Description générale du système",
+        "sous_points": [
+          {
+            "lettre": "a",
+            "libelle": "La destination du système, le nom du fournisseur, et la version, en disant comment elle se situe par rapport aux versions précédentes."
+          },
+          {
+            "lettre": "b",
+            "libelle": "La façon dont le système interagit avec du matériel, des logiciels ou d'autres systèmes d'IA qui ne font pas partie de lui, ou peut le faire."
+          },
+          {
+            "lettre": "c",
+            "libelle": "Les versions de logiciel et de micrologiciel concernées, et les exigences de mise à jour."
+          },
+          {
+            "lettre": "d",
+            "libelle": "Toutes les formes sous lesquelles le système est mis sur le marché : logiciel embarqué dans du matériel, téléchargement, interface de programmation."
+          },
+          {
+            "lettre": "e",
+            "libelle": "La description du matériel sur lequel le système est destiné à fonctionner."
+          },
+          {
+            "lettre": "f",
+            "libelle": "Quand le système est un composant d'un produit, des photographies ou des illustrations de son aspect extérieur, de son marquage et de son agencement interne."
+          },
+          {
+            "lettre": "g",
+            "libelle": "Une description de base de l'interface mise à la disposition du déployeur."
+          },
+          {
+            "lettre": "h",
+            "libelle": "La notice d'utilisation, et le cas échéant la description de l'interface destinée au déployeur."
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "intitule": "Description des éléments du système et de son développement",
+        "sous_points": [
+          {
+            "lettre": "a",
+            "libelle": "Les méthodes et les étapes du développement, y compris le recours à des systèmes pré-entraînés ou à des outils de tiers, et la façon dont ils ont été utilisés, intégrés ou modifiés."
+          },
+          {
+            "lettre": "b",
+            "libelle": "Les spécifications de conception : la logique générale et les algorithmes, les choix de conception et leur justification, les hypothèses posées sur les personnes ou les groupes visés, les principaux choix de classification, ce que le système est conçu pour optimiser, la pertinence de ses paramètres, ce qu'il est censé produire et avec quelle qualité, et les arbitrages techniques consentis pour satisfaire au chapitre III, section 2."
+          },
+          {
+            "lettre": "c",
+            "libelle": "L'architecture du système : la façon dont les composants logiciels s'articulent, et les ressources de calcul employées pour le développer, l'entraîner, le tester et le valider."
+          },
+          {
+            "lettre": "d",
+            "libelle": "Les données : la méthode d'entraînement, les jeux de données utilisés avec leur provenance, leur portée et leurs caractéristiques, la façon dont ils ont été obtenus et sélectionnés, les procédures d'étiquetage et les procédures de nettoyage."
+          },
+          {
+            "lettre": "e",
+            "libelle": "L'évaluation des mesures de contrôle humain exigées par l'article 14, et des moyens techniques qui aident le déployeur à interpréter les sorties du système, au titre de l'article 13, paragraphe 3, point d)."
+          },
+          {
+            "lettre": "f",
+            "libelle": "Le cas échéant, les modifications prédéterminées du système et de ses performances, et les dispositions techniques prises pour qu'il reste conforme au chapitre III, section 2, après ces modifications."
+          },
+          {
+            "lettre": "g",
+            "libelle": "Les procédures de validation et d'essai : les données d'essai et leurs caractéristiques, les mesures d'exactitude, de robustesse et de conformité, les essais menés sur les discriminations possibles, et les journaux d'essai datés et signés par les personnes responsables, y compris pour les modifications prédéterminées."
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "intitule": "Surveillance, fonctionnement et contrôle du système",
+        "libelle": "Ce que le système sait faire et ce qu'il ne sait pas faire : son degré d'exactitude, y compris pour des personnes ou des groupes particuliers, et l'exactitude attendue au regard de sa destination. Les résultats non voulus prévisibles et les sources de risque pour la santé, la sécurité, les droits fondamentaux et contre les discriminations. Les mesures de contrôle humain de l'article 14, et les moyens techniques qui aident le déployeur à interpréter les sorties. Le cas échéant, les spécifications des données d'entrée.",
+        "renvois": [
+          "14"
+        ]
+      },
+      {
+        "numero": "4",
+        "intitule": "Pertinence des mesures de performance",
+        "libelle": "La description des mesures de performance retenues et la raison pour laquelle elles conviennent à ce système-là.",
+        "renvois": [
+          "15"
+        ]
+      },
+      {
+        "numero": "5",
+        "intitule": "Système de gestion des risques",
+        "libelle": "La description détaillée du système de gestion des risques exigé par l'article 9.",
+        "renvois": [
+          "9"
+        ]
+      },
+      {
+        "numero": "6",
+        "intitule": "Modifications apportées au cours du cycle de vie",
+        "libelle": "Les modifications que le fournisseur a apportées au système pendant sa vie, et ce qu'elles changent.",
+        "renvois": [
+          "20"
+        ]
+      },
+      {
+        "numero": "7",
+        "intitule": "Normes harmonisées et solutions de remplacement",
+        "libelle": "La liste des normes harmonisées appliquées, en tout ou en partie. Quand aucune norme harmonisée n'a été appliquée, la description détaillée des solutions retenues pour satisfaire au chapitre III, section 2, et des autres normes ou spécifications techniques employées.",
+        "renvois": [
+          "40",
+          "42"
+        ]
+      },
+      {
+        "numero": "8",
+        "intitule": "Déclaration UE de conformité",
+        "libelle": "Une copie de la déclaration UE de conformité de l'article 47.",
+        "renvois": [
+          "47"
+        ]
+      },
+      {
+        "numero": "9",
+        "intitule": "Surveillance après commercialisation",
+        "libelle": "La description du dispositif d'évaluation des performances du système après sa mise sur le marché, et le plan de surveillance après commercialisation de l'article 72, avec sa liste d'éléments.",
+        "renvois": [
+          "72"
+        ]
+      }
+    ]
+  },
   "a_verifier": [
-    {
-      "sujet": "Contenu de l'ANNEXE IV, les rubriques de la documentation technique",
-      "raison": "La page de l'article 11 sur le site de la Commission renvoie à l'annexe IV sans en reproduire le contenu. Ses rubriques n'ont donc PAS été lues lors de la collecte du 17/09/2026.",
-      "action": "Les collecter sur leur propre page avant toute utilisation dans un document client. Tant que ce n'est pas fait, ne jamais énumérer les rubriques de l'annexe IV de mémoire."
-    },
     {
       "sujet": "Montant des amendes de l'article 101 pour les fournisseurs de modèles à usage général",
       "raison": "Non vérifié à la source. ia-act.v1.json décrit le régime de l'article 101 sans en donner le plafond.",

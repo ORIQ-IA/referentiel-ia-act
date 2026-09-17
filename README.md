@@ -71,10 +71,16 @@ Deux points méritent d'être signalés, parce qu'ils sont souvent mal compris :
 - pour les points 2 à 8 de l'annexe III, l'évaluation de la conformité se fait
   **par contrôle interne**, sans organisme notifié.
 
+Le bloc `annexe_iv` porte les **neuf rubriques de la documentation technique**
+exigée par l'article 11, avec quinze sous-points pour les deux premières et les
+renvois vers les articles 9, 14, 15, 20, 40, 42, 47 et 72. Collectées le
+17 septembre 2026 sur la page de l'annexe, et non sur celle de l'article 11, qui
+y renvoie sans la reproduire.
+
 Comme le référentiel, ce fichier porte un champ `a_verifier` qui dit ce qui n'a
-pas été lu à la source. Les rubriques de l'annexe IV en font partie : la page de
-l'article 11 y renvoie sans les reproduire, elles n'ont donc pas été collectées et
-ne figurent pas ici.
+pas été lu à la source. Trois points y restent ouverts : le plafond des amendes
+de l'article 101 pour les fournisseurs de modèles à usage général, les articles
+54 et 55, et les articles 18, 19, 20 et 40 cités par l'article 16.
 
 ## Comment le citer
 

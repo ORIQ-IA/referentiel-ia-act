@@ -242,6 +242,47 @@ Brice.
 
 `verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue.
 
+## `obligations.v1.json` 1.2.0, 17 septembre 2026
+
+**L'annexe IV est collectée, et le catalogue est enfin validé.**
+
+Deux choses, et la seconde est la plus grave.
+
+### L'annexe IV
+
+Le bloc `annexe_iv` porte les neuf rubriques de la documentation technique exigée par
+l'article 11 : neuf rubriques, quinze sous-points pour les deux premières, avec les renvois
+vers les articles 9, 14, 15, 20, 40, 42, 47 et 72. Collectées le 17 septembre 2026 sur
+<https://ai-act-service-desk.ec.europa.eu/en/ai-act/annex-4>.
+
+La réserve qui les concernait disparaît de `a_verifier`. Elle y figurait parce que la page de
+l'article 11 renvoie à l'annexe sans la reproduire, et que la collecte du matin s'était arrêtée
+là. L'obligation `art11_documentation_technique` renvoie désormais au bloc au lieu de dire
+« au minimum les éléments de l'annexe IV » sans les porter.
+
+Trois réserves restent ouvertes : le plafond des amendes de l'article 101, les articles 54 et
+55, et les articles 18, 19, 20 et 40 cités par l'article 16.
+
+### Le validateur qui n'existait pas
+
+Ce fichier écrit depuis sa version 1.0.0, dans `relation_avec_ia_act_v1`, que chaque
+`exigible_le` correspond à une échéance de `ia-act.v1.json` « et un validateur le contrôle
+avant publication ». **C'était faux.** Le validateur du dépôt de conception ne connaissait pas
+ce fichier : il est parti sur GitHub, sur Zenodo et sur le site sans qu'aucun contrôle ne l'ait
+lu. Une affirmation de traçabilité non tenue est pire qu'une absence de contrôle, parce qu'on
+cesse de regarder.
+
+Le fichier entre dans la liste des fichiers validés, et six contrôles le verrouillent : une date d'exigibilité qui
+ne correspond à aucune échéance du référentiel, un statut qui contredit sa date, un acteur ou
+un palier hors vocabulaire, un identifiant en double, une entrée sans source https, une
+rubrique d'annexe IV perdue en route. `null` reste une valeur admise pour `palier_sanction`,
+c'est le cas de l'article 4 ; c'est l'absence de la clé qui est refusée, parce qu'elle ne
+distingue pas « pas de palier » de « pas encore regardé ».
+
+Vérifié en cassant volontairement les sept cas un par un : les sept sont attrapés, et le
+validateur repasse au vert après restauration. Un garde-fou qu'on n'a pas vu échouer sur un
+vrai défaut n'est qu'une intention.
+
 ## `obligations.v1.json` 1.1.0, 17 septembre 2026
 
 **Le chapitre III est atomisé.** Dix-sept articles du régime des systèmes à haut risque
