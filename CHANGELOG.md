@@ -217,3 +217,74 @@ revérifier, pas à supposer bloqué.
 
 `verifie_le` reste au 13 septembre 2026, aucune source n'ayant été relue. `CITATION.cff` suit la
 version, comme le validateur l'exige.
+
+## `obligations.v1.json` 1.1.0, 17 septembre 2026
+
+**Le chapitre III est atomisé.** Dix-sept articles du régime des systèmes à haut risque
+s'ajoutent aux huit obligations de la version précédente. Le catalogue en porte vingt-cinq.
+
+**Source, et c'est le point qui compte** : collecte article par article sur
+`ai-act-service-desk.ec.europa.eu`, le site de la Commission, versions anglaise et française.
+**Dix-sept sur dix-sept depuis la source officielle**, aucun recours à une source de repli. La
+règle du dépôt tient : rien ici ne vient de la mémoire d'un modèle.
+
+Trois familles, qui ne pèsent pas sur les mêmes personnes :
+
+- **Le fournisseur** : articles 9 (gestion des risques), 10 (gouvernance des données),
+  11 (documentation technique), 12 (journalisation), 13 (information du déployeur),
+  14 (contrôle humain), 15 (exactitude, robustesse, cybersécurité), 16 (ses douze obligations),
+  17 (système de gestion de la qualité), 72 (surveillance après commercialisation),
+  73 (incidents graves).
+- **La mise sur le marché** : 43 (évaluation de la conformité), 47 (déclaration UE),
+  48 (marquage CE), 49 (enregistrement).
+- **Le déployeur** : 26 (ses obligations) et 27 (analyse d'impact sur les droits fondamentaux).
+
+**Ce que la collecte a permis de trancher, et que le marché se trompe.** L'article 27 ne vise
+**pas tous les déployeurs** : seulement les organismes de droit public, les entités privées
+fournissant des services publics, et les déployeurs des systèmes des points 5 b) et 5 c) de
+l'annexe III. Une PME ordinaire n'y est pas soumise. Et l'analyse d'impact sur les droits
+fondamentaux **complète** l'analyse d'impact RGPD, elle ne s'y substitue pas : c'est la
+confusion la plus répandue chez les concurrents examinés le 17/09.
+
+Deux autres précisions qui changent une conclusion d'audit : pour les points 2 à 8 de
+l'annexe III, l'évaluation de la conformité se fait **par contrôle interne, sans organisme
+notifié** (article 43) ; et l'article 26 impose d'**informer les représentants des travailleurs
+avant toute mise en service sur le lieu de travail**, ce qui est l'obligation la plus concrète
+pour une entreprise française.
+
+**Quatre points ouverts, déclarés plutôt que comblés de mémoire** : les rubriques de l'annexe IV
+n'ont pas été lues, la page de l'article 11 y renvoyant sans les reproduire ; le plafond des
+amendes de l'article 101 ; les articles 54 et 55 ; et les articles 18, 19, 20 et 40 auxquels
+l'article 16 renvoie. Tant que l'annexe IV n'est pas collectée, **ne jamais en énumérer les
+rubriques dans un document client**.
+
+Ce fichier entre dans le paquet public avec cette version.
+
+## `obligations.v1.json` 1.0.0, 17 septembre 2026
+
+**Aucun fait de droit nouveau.** Fichier neuf, qui réorganise en obligations atomiques ce que
+`ia-act.v1.json` portait déjà en sections. Chaque entrée nomme son article, ses acteurs et sa
+date d'exigibilité. Rien n'y a été ajouté qui ne figurait pas déjà, vérifié et sourcé, dans le
+référentiel du 13 septembre.
+
+Motif : le référentiel répondait « quelles échéances » et « quelles interdictions ». Il ne
+répondait pas « quelles obligations pèsent sur moi, article par article », qui est la question
+d'un audit et celle d'un dirigeant. Une analyse d'écart ne se fait pas sur des sections.
+
+Périmètre de cette version : les huit obligations exigibles au 17 septembre 2026, plus les
+modèles à usage général. Articles 4, 5, 25, 50.1, 50.2, 50.3, 50.4 et 53. Le chapitre III
+n'est pas atomisé : il reste en prose dans `ia-act.v1.json`, section `haut_risque`.
+
+Fichier séparé de `ia-act.v1.json`, qui reste la source du calendrier, des sanctions et des
+définitions. Aucune date n'est redite ici de son propre chef : chaque `exigible_le` correspond à
+une échéance de `ia-act.v1.json`, et le validateur le contrôle.
+
+Deux points ouverts, portés dans `a_verifier` : le plafond des amendes de l'article 101 pour
+les fournisseurs de modèles à usage général, que le référentiel décrit sans le chiffrer, et
+les articles 54 et 55, cités à l'échéance du 2 août 2025 sans contenu.
+
+**Question de calendrier posée par ce travail, tranchée depuis.** L'article 25 est daté ici au
+2 décembre 2027, parce qu'il appartient au chapitre III et que l'échéance de cette date couvre
+« chapitre III, annexe III ». Un déployeur qui appose sa marque sur un outil du marché n'est pas
+en écart en septembre 2026 : le fait générateur existe, ses effets arrivent. Le compter comme un
+écart est le type d'erreur de calendrier reproché au reste du marché.

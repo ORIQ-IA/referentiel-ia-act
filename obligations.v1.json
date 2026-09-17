@@ -1,0 +1,652 @@
+{
+  "version": "1.1.0",
+  "verifie_le": "2026-09-13",
+  "verifie_par": "Oriq",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/deed.fr",
+  "citation": "Oriq, référentiel IA Act, obligations, version {version}, vérifié le {verifie_le}, https://oriq.fr/ia-act/",
+  "avertissement": "Document d'information. Ne constitue pas un avis juridique opposable.",
+  "portee": "Catalogue des obligations du règlement (UE) 2024/1689, une obligation par entrée, avec son article, ses acteurs et sa date d'exigibilité. Ce fichier ne porte QUE le droit. La méthode qui permet de vérifier chacune de ces obligations chez une entreprise n'est pas publiée : le bien commun, c'est le texte et ses dates, pas la façon de les contrôler.",
+  "perimetre_de_cette_version": "Les huit obligations exigibles au 17 septembre 2026, plus les modèles à usage général, PLUS le chapitre III atomisé : dix-sept articles du régime des systèmes à haut risque, exigible le 2 décembre 2027 pour l'annexe III et le 2 août 2028 pour l'annexe I. Collecte du 17/09/2026 sur la source officielle de la Commission, article par article.",
+  "relation_avec_ia_act_v1": "ia-act.v1.json reste la source du calendrier, des sanctions et des définitions. Ce fichier ne redit aucune date de son propre chef : chaque exigible_le correspond à une échéance de ia-act.v1.json, et un validateur le contrôle avant publication.",
+  "acteurs": [
+    {
+      "id": "fournisseur",
+      "libelle": "Fournisseur d'un système d'IA, au sens de l'article 3, point 3."
+    },
+    {
+      "id": "deployeur",
+      "libelle": "Déployeur d'un système d'IA, au sens de l'article 3, point 4. C'est le cas de la très grande majorité des entreprises."
+    },
+    {
+      "id": "fournisseur_modele",
+      "libelle": "Fournisseur d'un modèle d'IA à usage général. Ne vise pas une entreprise qui consomme un modèle par abonnement."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "art4_litteratie",
+      "article": "4",
+      "chapitre": "I",
+      "intitule": "Soutenir la littératie IA des personnes qui utilisent vos outils",
+      "acteurs": [
+        "fournisseur",
+        "deployeur"
+      ],
+      "exigible_le": "2025-02-02",
+      "statut": "exigible",
+      "condition_application": "Toute entreprise qui met des systèmes d'IA entre les mains de personnes agissant pour son compte, salariés comme prestataires.",
+      "libelle": "Prendre des mesures pour soutenir le développement d'un niveau suffisant de littératie IA chez les personnes qui utilisent les systèmes pour leur compte.",
+      "supervision_nationale_depuis": "2026-08-03",
+      "supervision_nationale_source": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+      "note_omnibus": "L'omnibus a transformé une obligation de résultat en obligation de moyens. Aucun niveau individuel n'a à être garanti. L'obligation reste contraignante pour tout déployeur.",
+      "palier_sanction": null,
+      "note_sanction": "L'article 4 ne figure pas à l'article 99. Aucune amende directe ne le sanctionne. Il reste opposable, et un manquement pèse dans l'appréciation d'un autre manquement.",
+      "source": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+    },
+    {
+      "id": "art5_pratiques_interdites",
+      "article": "5",
+      "chapitre": "II",
+      "intitule": "Ne mettre en oeuvre aucune pratique interdite",
+      "acteurs": [
+        "fournisseur",
+        "deployeur"
+      ],
+      "exigible_le": "2025-02-02",
+      "statut": "exigible",
+      "condition_application": "Toujours, quel que soit le rôle et quel que soit le secteur.",
+      "libelle": "Les pratiques listées à l'article 5 sont interdites. Il n'existe aucune mise en conformité possible : il faut arrêter.",
+      "effet": "Pratique interdite. Aucune mise en conformité possible, il faut arrêter.",
+      "points_de_controle": [
+        {
+          "id": "manipulation",
+          "libelle": "Techniques subliminales ou trompeuses qui altèrent le comportement et causent un préjudice.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "vulnerabilite",
+          "libelle": "Exploitation de la vulnérabilité liée à l'âge, au handicap ou à la situation sociale ou économique.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "notation_sociale",
+          "libelle": "Notation sociale des personnes conduisant à un traitement défavorable dans un contexte sans rapport.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "prediction_infraction",
+          "libelle": "Prédiction du risque qu'une personne commette une infraction sur la seule base du profilage ou de traits de personnalité.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "moissonnage_visages",
+          "libelle": "Constitution de bases de reconnaissance faciale par moissonnage non ciblé d'images.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "emotions_travail_education",
+          "libelle": "Reconnaissance des émotions sur le lieu de travail et dans les établissements d'enseignement, hors raisons médicales ou de sécurité.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "categorisation_biometrique",
+          "libelle": "Catégorisation biométrique visant à déduire des données sensibles, dont l'origine, les opinions, la religion ou l'orientation sexuelle.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "identification_biometrique_temps_reel",
+          "libelle": "Identification biométrique à distance en temps réel dans l'espace public à des fins répressives, sauf exceptions strictement encadrées.",
+          "exigible_le": "2025-02-02"
+        },
+        {
+          "id": "contenus_intimes",
+          "libelle": "Génération de contenus intimes non consentis et de contenus pédocriminels.",
+          "exigible_le": "2026-12-02",
+          "ajout": "omnibus 2026/1744",
+          "note": "Article 5(1), points ba) et bb), et article 5(1a) et (1b), insérés par l'omnibus. Seule pratique interdite qui ne vaut pas depuis le 2 février 2025 : l'article 113, point a), l'excepte et fixe son application au 2 décembre 2026."
+        }
+      ],
+      "palier_sanction": "pratiques_interdites",
+      "source": "https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=OJ%3AL_202601744"
+    },
+    {
+      "id": "art25_changement_de_role",
+      "article": "25",
+      "chapitre": "III",
+      "intitule": "Savoir si vous êtes devenu fournisseur sans le vouloir",
+      "acteurs": [
+        "deployeur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Un déployeur d'un système à haut risque qui appose son nom ou sa marque sur ce système, le modifie substantiellement, ou en change la destination.",
+      "libelle": "Un déployeur devient fournisseur, avec toutes les obligations qui vont avec, s'il appose son nom ou sa marque sur un système à haut risque, s'il le modifie substantiellement, ou s'il en change la destination.",
+      "piege": "C'est le cas le plus fréquent chez une entreprise qui habille un outil du marché à ses couleurs et croit rester simple utilisateur.",
+      "note_calendrier": "L'article 25 est dans le chapitre III. Il bascule un déployeur vers les obligations des systèmes à haut risque, lesquelles ne sont exigibles qu'au 2 décembre 2027 pour l'annexe III. La bascule elle-même se prépare dès maintenant : l'entreprise qui appose sa marque aujourd'hui sera fournisseur ce jour-là.",
+      "palier_sanction": "autres_obligations",
+      "note_sanction": "L'article 99 vise expressément l'article 25(2) et (4).",
+      "source": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689"
+    },
+    {
+      "id": "art50_1_interaction",
+      "article": "50",
+      "alinea": "50.1",
+      "chapitre": "IV",
+      "intitule": "Dire qu'une IA parle",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2026-08-02",
+      "statut": "exigible",
+      "condition_application": "Un système d'IA qui interagit directement avec des personnes physiques.",
+      "libelle": "Un système qui interagit directement avec des personnes doit les informer qu'elles parlent à une IA, sauf si c'est évident pour une personne normalement avisée.",
+      "exceptions": [
+        "Lorsque c'est évident du point de vue d'une personne normalement informée, attentive et avisée, compte tenu des circonstances et du contexte."
+      ],
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50"
+    },
+    {
+      "id": "art50_2_marquage_machine",
+      "article": "50",
+      "alinea": "50.2",
+      "chapitre": "IV",
+      "intitule": "Marquer les contenus générés dans un format lisible par machine",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2026-08-02",
+      "statut": "exigible",
+      "condition_application": "Un système d'IA générative qui produit des contenus de synthèse, texte, image, son ou vidéo.",
+      "libelle": "Les contenus de synthèse produits par un système d'IA générative doivent être marqués dans un format lisible par machine et détectable comme généré ou manipulé.",
+      "tolerance": {
+        "jusqu_au": "2026-12-02",
+        "libelle": "Pour les systèmes déjà sur le marché avant le 2 août 2026.",
+        "effet": "Après cette date, la tolérance tombe et l'obligation vaut pour tout le parc, y compris les systèmes antérieurs."
+      },
+      "palier_sanction": "autres_obligations",
+      "source": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations"
+    },
+    {
+      "id": "art50_3_emotions_biometrie",
+      "article": "50",
+      "alinea": "50.3",
+      "chapitre": "IV",
+      "intitule": "Informer les personnes exposées à la reconnaissance des émotions ou à la catégorisation biométrique",
+      "acteurs": [
+        "deployeur"
+      ],
+      "exigible_le": "2026-08-02",
+      "statut": "exigible",
+      "condition_application": "Exploitation d'un système de reconnaissance des émotions ou de catégorisation biométrique.",
+      "libelle": "Informer les personnes exposées à un système de reconnaissance des émotions ou de catégorisation biométrique.",
+      "renvoi": "Vérifier d'abord l'article 5 : la reconnaissance des émotions au travail et dans l'enseignement est interdite hors raisons médicales ou de sécurité, et la catégorisation biométrique déduisant des données sensibles est interdite. Informer ne rend pas licite une pratique interdite.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50"
+    },
+    {
+      "id": "art50_4_contenus_publies",
+      "article": "50",
+      "alinea": "50.4",
+      "chapitre": "IV",
+      "intitule": "Révéler qu'un contenu publié a été généré ou manipulé",
+      "acteurs": [
+        "deployeur"
+      ],
+      "exigible_le": "2026-08-02",
+      "statut": "exigible",
+      "condition_application": "Publication d'un contenu image, son ou vidéo généré ou manipulé, ou d'un texte publié dans le but d'informer le public sur des questions d'intérêt public.",
+      "libelle": "Révéler qu'un contenu image, son ou vidéo a été généré ou manipulé. Pour un texte publié sur un sujet d'intérêt public, révéler également, sauf relecture éditoriale humaine avec responsabilité éditoriale assumée, ou oeuvre manifestement artistique ou satirique.",
+      "exceptions": [
+        "Texte ayant fait l'objet d'une relecture éditoriale humaine avec responsabilité éditoriale assumée sur la publication.",
+        "Oeuvre manifestement artistique, créative, satirique ou fictionnelle, pour laquelle la révélation se fait sans entraver l'oeuvre."
+      ],
+      "palier_sanction": "autres_obligations",
+      "source": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+    },
+    {
+      "id": "art53_modeles_usage_general",
+      "article": "53",
+      "chapitre": "V",
+      "intitule": "Obligations du fournisseur de modèle à usage général",
+      "acteurs": [
+        "fournisseur_modele"
+      ],
+      "exigible_le": "2025-08-02",
+      "statut": "exigible",
+      "condition_application": "Mise sur le marché d'un modèle d'IA à usage général. Une entreprise qui consomme un modèle par abonnement n'est pas visée.",
+      "libelle": "Documentation technique, information des fournisseurs en aval, politique de respect du droit d'auteur, résumé public des contenus d'entraînement. Obligations renforcées en cas de risque systémique.",
+      "transitoire": {
+        "article": "111.3",
+        "jusqu_au": "2027-08-02",
+        "libelle": "Les modèles mis sur le marché avant le 2 août 2025 doivent se conformer pour le 2 août 2027."
+      },
+      "palier_sanction": "article_101",
+      "note_sanction": "Les amendes aux fournisseurs de modèles à usage général relèvent de l'article 101, applicable depuis le 2 août 2026, et non de l'article 99. Le montant n'est pas porté par ce référentiel, voir a_verifier.",
+      "note_perimetre": "Obligation atomisée à un seul niveau dans cette version. Les articles 54 et 55, mandataire et risque systémique, ne sont pas encore couverts.",
+      "source": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689"
+    },
+    {
+      "id": "art9_gestion_risques",
+      "article": "9",
+      "chapitre": "III",
+      "intitule": "Tenir un système de gestion des risques",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Un processus continu et itératif sur tout le cycle de vie : identifier les risques connus et raisonnablement prévisibles pour la santé, la sécurité et les droits fondamentaux, les estimer en usage conforme et en mésusage raisonnablement prévisible, adopter des mesures ciblées, et tester avant toute mise sur le marché.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-9",
+      "exceptions": [
+        "Ne sont visés que les risques qui peuvent raisonnablement être atténués ou éliminés par le développement, la conception, ou une information technique adéquate.",
+        "Un fournisseur déjà soumis à une gestion interne des risques au titre d'un autre texte de l'Union peut intégrer ces étapes à ses procédures existantes.",
+        "Les tests en conditions réelles de l'article 60 sont une faculté, pas une obligation."
+      ],
+      "renvois": [
+        "72",
+        "13",
+        "60"
+      ]
+    },
+    {
+      "id": "art10_gouvernance_donnees",
+      "article": "10",
+      "chapitre": "III",
+      "intitule": "Gouverner les données d'entraînement, de validation et de test",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Les jeux de données doivent être pertinents, suffisamment représentatifs, autant que possible exempts d'erreurs et complets au regard de la destination. La gouvernance couvre l'origine, la préparation, les hypothèses, l'examen des biais possibles et les mesures pour les détecter et les atténuer.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-10",
+      "exceptions": [
+        "Le traitement de catégories particulières de données personnelles aux seules fins de correction des biais est exceptionnel et soumis à cinq conditions cumulatives, dont l'impossibilité d'atteindre l'objectif autrement et la suppression une fois le biais corrigé.",
+        "Pour un système qui ne recourt pas à l'entraînement de modèles, ces exigences ne portent que sur les jeux de test."
+      ]
+    },
+    {
+      "id": "art11_documentation_technique",
+      "article": "11",
+      "chapitre": "III",
+      "intitule": "Établir la documentation technique",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "La documentation est établie AVANT la mise sur le marché ou la mise en service, tenue à jour, et doit démontrer la conformité de façon claire et complète pour une autorité ou un organisme notifié. Elle contient au minimum les éléments de l'annexe IV.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-11",
+      "exceptions": [
+        "Les PME et les jeunes pousses peuvent fournir les éléments de l'annexe IV sous une forme simplifiée, au moyen d'un formulaire établi par la Commission que les organismes notifiés sont tenus d'accepter.",
+        "Un produit couvert par l'annexe I section A ne donne lieu qu'à un seul jeu de documentation technique."
+      ],
+      "renvois": [
+        "97"
+      ]
+    },
+    {
+      "id": "art12_journalisation",
+      "article": "12",
+      "chapitre": "III",
+      "intitule": "Permettre l'enregistrement automatique des événements",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Le système doit techniquement permettre la journalisation automatique sur toute sa durée de vie, de façon à identifier les situations à risque et les modifications substantielles, à faciliter la surveillance après commercialisation et le suivi par le déployeur.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+      "exceptions": [
+        "Pour l'identification biométrique à distance, le texte exige en outre la période de chaque usage, la base de référence interrogée, les données d'entrée ayant produit une correspondance, et l'identité des personnes ayant vérifié les résultats."
+      ],
+      "renvois": [
+        "79",
+        "72",
+        "26",
+        "14"
+      ]
+    },
+    {
+      "id": "art13_information_deployeur",
+      "article": "13",
+      "chapitre": "III",
+      "intitule": "Informer le déployeur par une notice d'utilisation",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Le système doit être suffisamment transparent pour que le déployeur en interprète la sortie. Une notice concise, complète, correcte et claire accompagne le système : identité du fournisseur, destination, niveau d'exactitude et ses métriques, résultats des tests de robustesse, circonstances connues affectant l'exactitude, risques, mesures de contrôle humain, durée de vie attendue et maintenance.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-13",
+      "renvois": [
+        "15",
+        "9",
+        "14",
+        "12"
+      ]
+    },
+    {
+      "id": "art14_controle_humain",
+      "article": "14",
+      "chapitre": "III",
+      "intitule": "Prévoir un contrôle humain effectif",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Le système est conçu pour être effectivement surveillé par des personnes physiques pendant son utilisation. Elles doivent pouvoir comprendre ses capacités et ses limites, rester conscientes du biais d'automatisation, interpréter la sortie, décider de ne pas l'utiliser, et interrompre le système.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-14",
+      "exceptions": [
+        "Pour l'identification biométrique à distance, aucune action ni décision ne peut être prise sans vérification séparée par au moins deux personnes physiques compétentes.",
+        "Cette double vérification ne s'applique pas aux usages répressifs, migratoires, de contrôle aux frontières ou d'asile lorsque le droit la juge disproportionnée."
+      ]
+    },
+    {
+      "id": "art15_exactitude_robustesse",
+      "article": "15",
+      "chapitre": "III",
+      "intitule": "Atteindre un niveau approprié d'exactitude, de robustesse et de cybersécurité",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Le système doit être performant de façon constante sur ces trois plans tout au long de son cycle de vie, déclarer ses niveaux d'exactitude dans la notice, résister aux erreurs et aux incohérences, et résister aux tentatives de tiers non autorisés visant à altérer son usage, ses sorties ou sa performance.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-15",
+      "exceptions": [
+        "Les solutions techniques doivent être appropriées aux circonstances et aux risques : le texte pose une exigence de proportionnalité, pas un moyen imposé.",
+        "Pour un système qui continue d'apprendre après sa mise sur le marché, le risque de boucle de rétroaction des sorties biaisées doit être traité."
+      ]
+    },
+    {
+      "id": "art16_obligations_fournisseur",
+      "article": "16",
+      "chapitre": "III",
+      "intitule": "Les douze obligations du fournisseur",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "L'article rassemble ce que le fournisseur doit faire : conformité aux exigences, identification sur le système, système de gestion de la qualité, conservation de la documentation et des journaux, évaluation de la conformité AVANT mise sur le marché, déclaration UE, marquage CE, enregistrement, mesures correctives, démonstration de conformité sur demande, et accessibilité.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-16",
+      "renvois": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "43",
+        "47",
+        "48",
+        "49"
+      ]
+    },
+    {
+      "id": "art17_gestion_qualite",
+      "article": "17",
+      "chapitre": "III",
+      "intitule": "Mettre en place un système de gestion de la qualité",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Documenté par des politiques et procédures écrites, il couvre treize domaines : stratégie de conformité, conception, développement, tests, normes appliquées, gestion des données, gestion des risques, surveillance après commercialisation, signalement des incidents, communication avec les autorités, tenue des registres, gestion des ressources et cadre de responsabilité.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-17",
+      "exceptions": [
+        "La mise en oeuvre est proportionnée à la taille de l'organisation du fournisseur.",
+        "Un fournisseur déjà soumis à un système de gestion de la qualité sectoriel peut y intégrer ces aspects.",
+        "Un établissement financier soumis aux exigences de gouvernance interne du droit des services financiers est réputé satisfaire à cet article, SAUF pour la gestion des risques, la surveillance après commercialisation et le signalement des incidents graves."
+      ],
+      "renvois": [
+        "9",
+        "40",
+        "72",
+        "73"
+      ]
+    },
+    {
+      "id": "art43_evaluation_conformite",
+      "article": "43",
+      "chapitre": "III",
+      "intitule": "Passer l'évaluation de la conformité",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Avant la mise sur le marché. Pour la biométrie de l'annexe III point 1, le fournisseur choisit entre le contrôle interne et l'évaluation par un organisme notifié ; l'organisme devient obligatoire s'il n'a pas appliqué les normes harmonisées. Pour les points 2 à 8 de l'annexe III, c'est le contrôle interne, SANS organisme notifié.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-43",
+      "exceptions": [
+        "Toute modification substantielle impose une NOUVELLE évaluation.",
+        "Pour un système qui continue d'apprendre, les modifications prédéterminées au moment de l'évaluation initiale et inscrites à la documentation technique ne sont PAS des modifications substantielles.",
+        "Pour les usages répressifs, migratoires et d'asile, l'autorité de surveillance du marché fait office d'organisme notifié."
+      ],
+      "renvois": [
+        "40",
+        "41",
+        "31",
+        "97"
+      ]
+    },
+    {
+      "id": "art47_declaration_conformite",
+      "article": "47",
+      "chapitre": "III",
+      "intitule": "Établir la déclaration UE de conformité",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Une déclaration par système, lisible par machine, signée, tenue à disposition des autorités pendant DIX ANS à compter de la mise sur le marché, traduite dans une langue comprise des autorités des États membres concernés. En la signant, le fournisseur assume la responsabilité de la conformité.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-47",
+      "exceptions": [
+        "Lorsque d'autres textes de l'Union exigent aussi une déclaration, une déclaration unique couvre l'ensemble."
+      ],
+      "renvois": [
+        "97"
+      ]
+    },
+    {
+      "id": "art48_marquage_ce",
+      "article": "48",
+      "chapitre": "III",
+      "intitule": "Apposer le marquage CE",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Apposé de façon visible, lisible et indélébile sur le système, ou à défaut sur l'emballage ou la documentation. Pour un système fourni numériquement, un marquage CE numérique est utilisé s'il est aisément accessible. Il est suivi du numéro de l'organisme notifié lorsqu'il y en a un, numéro qui doit figurer aussi dans tout matériel promotionnel.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-48",
+      "renvois": [
+        "43"
+      ]
+    },
+    {
+      "id": "art49_enregistrement",
+      "article": "49",
+      "chapitre": "III",
+      "intitule": "S'enregistrer dans la base de données de l'UE",
+      "acteurs": [
+        "fournisseur",
+        "deployeur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Pour le fournisseur : tout système de l'annexe III sauf le point 2. Pour le déployeur : SEULEMENT s'il est une autorité publique ou un organisme de l'Union. Un déployeur privé n'est pas visé.",
+      "libelle": "Le fournisseur s'enregistre lui-même et son système avant la mise sur le marché. Le déployeur public s'enregistre, sélectionne le système et enregistre son usage avant la mise en service. Le fournisseur qui a conclu que son système n'est pas à haut risque au titre de l'article 6(3) doit s'enregistrer également.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-49",
+      "exceptions": [
+        "Les systèmes du point 2 de l'annexe III, les infrastructures critiques, s'enregistrent au niveau national et non dans la base européenne.",
+        "Pour les points 1, 6 et 7 de l'annexe III dans les domaines répressif, migratoire et d'asile, l'enregistrement se fait dans une section sécurisée NON PUBLIQUE, accessible aux seules Commission et autorités nationales."
+      ],
+      "renvois": [
+        "6",
+        "71",
+        "74"
+      ]
+    },
+    {
+      "id": "art26_obligations_deployeur",
+      "article": "26",
+      "chapitre": "III",
+      "intitule": "Les obligations de celui qui utilise le système",
+      "acteurs": [
+        "deployeur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Déployeur d'un système à haut risque. C'est l'article que rencontrera une entreprise française ordinaire, bien plus que ceux du fournisseur.",
+      "libelle": "Utiliser le système conformément à la notice, confier le contrôle humain à des personnes compétentes et dotées de l'autorité nécessaire, veiller à la pertinence des données d'entrée que l'on maîtrise, surveiller le fonctionnement, suspendre l'usage et prévenir le fournisseur en cas de risque, signaler tout incident grave, conserver les journaux au moins SIX MOIS, et informer les personnes concernées par une décision.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26",
+      "exceptions": [
+        "Avant toute mise en service sur le LIEU DE TRAVAIL, informer les représentants des travailleurs et les travailleurs concernés. C'est l'obligation la plus concrète pour une entreprise française.",
+        "Pour un établissement financier soumis aux exigences de gouvernance interne du droit des services financiers, l'obligation de surveillance est réputée remplie par le respect de ces règles.",
+        "L'information des personnes ne s'applique pas aux usages répressifs relevant de la directive (UE) 2016/680.",
+        "L'information reçue au titre de l'article 13 sert à nourrir l'analyse d'impact RGPD lorsqu'elle est due."
+      ],
+      "renvois": [
+        "72",
+        "79",
+        "73",
+        "49",
+        "71",
+        "13",
+        "50"
+      ]
+    },
+    {
+      "id": "art27_fria",
+      "article": "27",
+      "chapitre": "III",
+      "intitule": "Conduire l'analyse d'impact sur les droits fondamentaux",
+      "acteurs": [
+        "deployeur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "ATTENTION, le champ est étroit et le marché s'en trompe. Trois catégories seulement : les organismes de droit public, les entités privées fournissant des services publics, et les déployeurs des systèmes des points 5 b) et 5 c) de l'annexe III. Les systèmes du point 2 de l'annexe III en sont exclus.",
+      "libelle": "Avant le déploiement : décrire les processus dans lesquels le système sera utilisé, la période et la fréquence d'usage, les catégories de personnes affectées, les risques spécifiques de préjudice, la mise en oeuvre du contrôle humain, et les mesures à prendre si les risques se matérialisent. Puis notifier les résultats à l'autorité de surveillance du marché.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-27",
+      "exceptions": [
+        "L'analyse vaut pour la première utilisation ; elle peut s'appuyer sur une analyse antérieure et s'actualise si un élément change.",
+        "Elle COMPLÈTE l'analyse d'impact RGPD lorsqu'il y en a une, elle ne s'y substitue pas. Confondre les deux est l'erreur la plus répandue du marché.",
+        "Dispense de notification dans les cas de l'article 46(1)."
+      ],
+      "renvois": [
+        "6",
+        "13",
+        "46"
+      ]
+    },
+    {
+      "id": "art72_surveillance_apres_marche",
+      "article": "72",
+      "chapitre": "III",
+      "intitule": "Surveiller le système après sa mise sur le marché",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Un système de surveillance documenté, proportionné à la nature de la technologie et aux risques, qui collecte et analyse activement les données de performance sur toute la durée de vie, y compris celles fournies par les déployeurs, pour évaluer la conformité CONTINUE. Le plan fait partie de la documentation technique de l'annexe IV.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-72",
+      "exceptions": [
+        "Les données opérationnelles sensibles des autorités répressives en sont exclues.",
+        "Pour les produits de l'annexe I section A et pour les établissements financiers, ces éléments peuvent être intégrés aux systèmes existants si le niveau de protection est équivalent."
+      ],
+      "renvois": [
+        "98"
+      ]
+    },
+    {
+      "id": "art73_incidents_graves",
+      "article": "73",
+      "chapitre": "III",
+      "intitule": "Signaler les incidents graves",
+      "acteurs": [
+        "fournisseur"
+      ],
+      "exigible_le": "2027-12-02",
+      "statut": "a_venir",
+      "condition_application": "Système d'IA à haut risque au sens de l'article 6. Ne concerne pas une entreprise qui se contente d'utiliser un système du marché.",
+      "libelle": "Trois délais, et ils ne sont pas les mêmes : QUINZE JOURS dans le régime général, DEUX JOURS pour une infraction de grande ampleur, DIX JOURS en cas de décès. Le délai court à partir du moment où le fournisseur OU le déployeur en a eu connaissance. Le signalement va aux autorités de surveillance du marché de l'État où l'incident s'est produit.",
+      "palier_sanction": "autres_obligations",
+      "source": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-73",
+      "exceptions": [
+        "Un rapport initial incomplet est admis lorsque la rapidité l'exige, suivi d'un rapport complet.",
+        "Aucune investigation impliquant une modification du système ne peut être menée avant d'en avoir informé les autorités.",
+        "Pour un fournisseur déjà soumis à des obligations de signalement équivalentes, et pour les composants de sécurité de dispositifs médicaux, la notification est limitée à un type d'incident."
+      ],
+      "renvois": [
+        "3",
+        "77"
+      ]
+    }
+  ],
+  "a_verifier": [
+    {
+      "sujet": "Contenu de l'ANNEXE IV, les rubriques de la documentation technique",
+      "raison": "La page de l'article 11 sur le site de la Commission renvoie à l'annexe IV sans en reproduire le contenu. Ses rubriques n'ont donc PAS été lues lors de la collecte du 17/09/2026.",
+      "action": "Les collecter sur leur propre page avant toute utilisation dans un document client. Tant que ce n'est pas fait, ne jamais énumérer les rubriques de l'annexe IV de mémoire."
+    },
+    {
+      "sujet": "Montant des amendes de l'article 101 pour les fournisseurs de modèles à usage général",
+      "raison": "Non vérifié à la source. ia-act.v1.json décrit le régime de l'article 101 sans en donner le plafond.",
+      "action": "Ouvrir l'article 101 sur l'AI Act Service Desk avant d'afficher le moindre montant."
+    },
+    {
+      "sujet": "Articles 54 et 55, mandataire et modèles présentant un risque systémique",
+      "raison": "Cités par ia-act.v1.json à l'échéance du 2 août 2025, sans contenu. Hors du périmètre de la collecte du 17/09.",
+      "action": "À atomiser dans une version ultérieure, avec leur source."
+    },
+    {
+      "sujet": "Articles 18, 19, 20 et 40, cités par l'article 16",
+      "raison": "L'article 16 y renvoie pour la conservation de la documentation, des journaux et les mesures correctives. Ces articles n'ont pas été collectés.",
+      "action": "Les atomiser si un audit rencontre un vrai fournisseur de système à haut risque."
+    }
+  ],
+  "sources_primaires": [
+    "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689",
+    "https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=OJ%3AL_202601744",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+    "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+    "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations",
+    "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+  ]
+}

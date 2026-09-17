@@ -43,6 +43,38 @@ voir l'entrée 1.3.0 du journal, qui les documente au lieu de les effacer.
 Deux champs à lire en premier : `version` et `verifie_le`. Le second dit la date
 à laquelle les sources ont été relues, pas la date du dernier commit.
 
+## Le catalogue d'obligations
+
+`obligations.v1.json` est le second fichier de données. Là où `ia-act.v1.json`
+répond « quelles échéances » et « quelles interdictions », celui-ci répond
+**« quelles obligations pèsent sur moi, article par article »**, qui est la
+question d'un dirigeant.
+
+Vingt-cinq entrées. Chacune porte son article, le ou les acteurs visés
+(fournisseur, déployeur, fournisseur de modèle), sa date d'exigibilité, la
+condition qui déclenche son application, les exceptions que le texte énonce
+lui-même, ses renvois vers d'autres articles, et le palier de sanction dont elle
+relève.
+
+Le chapitre III y est couvert en entier : les dix-sept articles du régime des
+systèmes à haut risque, collectés un par un sur le site de la Commission le
+17 septembre 2026.
+
+Deux points méritent d'être signalés, parce qu'ils sont souvent mal compris :
+
+- l'**analyse d'impact sur les droits fondamentaux** de l'article 27 ne pèse pas
+  sur tous les déployeurs. Le texte vise les organismes de droit public, les
+  entités privées fournissant des services publics, et les déployeurs des
+  systèmes des points 5 b) et 5 c) de l'annexe III. Et elle **complète** l'analyse
+  d'impact du RGPD, elle ne s'y substitue pas ;
+- pour les points 2 à 8 de l'annexe III, l'évaluation de la conformité se fait
+  **par contrôle interne**, sans organisme notifié.
+
+Comme le référentiel, ce fichier porte un champ `a_verifier` qui dit ce qui n'a
+pas été lu à la source. Les rubriques de l'annexe IV en font partie : la page de
+l'article 11 y renvoie sans les reproduire, elles n'ont donc pas été collectées et
+ne figurent pas ici.
+
 ## Comment le citer
 
 Le dépôt porte un [`CITATION.cff`](CITATION.cff) au format standard. GitHub
